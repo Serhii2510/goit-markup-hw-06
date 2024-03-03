@@ -6,6 +6,7 @@
       name="description"
       content="Your business digital marketing & growth solutions"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
       rel="stylesheet"
@@ -712,6 +713,9 @@
                 type="text"
                 name="user-name"
                 id="user-name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                title="Serhii"
+                required
                 autofocus
               />
               <svg
@@ -732,6 +736,9 @@
                 type="tel"
                 name="phone"
                 id="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
               />
               <svg
                 class="modal-order-form-input-icon"
@@ -751,6 +758,7 @@
                 type="email"
                 name="email"
                 id="email"
+                required
               />
               <svg
                 class="modal-order-form-input-icon"
@@ -769,20 +777,19 @@
             <textarea
               class="modal-order-form-textarea"
               name="user-comment"
-              rows="7"
               placeholder="Text input"
               id="user-comment"
             ></textarea>
           </div>
           <div class="modal-order-form-check">
             <input
-              class="visually-hidden"
+              class="modal-order-form-checkbox visually-hidden"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true"
             />
-            <label class="modal-order-form-checkbox" for="user-privacy">
+            <label class="modal-order-form-checkbox-label" for="user-privacy">
               <span class="modal-order-form-checkbox-input" id="one">
                 <svg
                   class="modal-order-form-checkbox-icon"
