@@ -20,9 +20,10 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header-container">
         <nav class="page-nav">
           <a class="logo" href="./index.html"
             >Web<span class="accent-color">Studio</span></a
@@ -53,15 +54,27 @@
             </li>
           </ul>
         </address>
+        <button class="menu-open-btn" type="button">
+          <svg
+            class="menu-open-btn-icon"
+            width="24"
+            height="24"
+            aria-label="mobile menu open icon"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="order-service-btn" type="button">Order Service</button>
         </div>
       </section>
+
       <section class="benefits">
         <div class="container">
           <h2 class="section-title visually-hidden">Our benefits</h2>
@@ -137,7 +150,8 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+
+      <!-- <section class="team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
@@ -472,8 +486,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="portfolio">
+      </section> -->
+
+      <!-- <section class="portfolio">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -623,9 +638,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="page-footer">
+
+    <!-- <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
           <a class="page-footer-logo" href="./index.html"
@@ -730,8 +746,9 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop">
+    </footer> -->
+
+    <!-- <div class="backdrop">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <svg
@@ -848,6 +865,20 @@
           </div>
           <button class="modal-order-form-button" type="submit">Send</button>
         </form>
+      </div>
+    </div> -->
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn">
+          <svg
+            class="mobile-menu-close-icon"
+            width="8"
+            height="8"
+            aria-label="mobile menu close icon"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </body>
