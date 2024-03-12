@@ -224,6 +224,20 @@ body {
   }
 }
 
+.hero {
+  max-width: 320px;
+  background-color: #2e2f42;
+  padding: 72px 0;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/hero/people-office-mobile.jpg');
+  background-size: cover;
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -263,22 +277,6 @@ body {
   background-color: #404bbf;
 }
 
-@media only screen and (max-width: 767px) {
-  .hero {
-    max-width: 320px;
-    background-color: #2e2f42;
-    padding: 72px 0;
-    margin: 0 auto;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url('../images/hero/people-office-mobile.jpg');
-    background-size: cover;
-  }
-}
-
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(
@@ -300,7 +298,6 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url('../images/hero/people-office-tablet.jpg');
-    background-size: cover;
   }
 
   .main-title {
@@ -332,7 +329,6 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url('../images/hero/people-office-desktop.jpg');
-    background-size: cover;
   }
 
   .main-title {
